@@ -76,4 +76,4 @@ Contributions are welcome! If you'd like to contribute to this project, please f
 **License**
 -------
 
-This project is licensed under the [GPL-3.0 license](LICENSE.md).
+This project is licensed under the [GPL-3.0 license](LICENSE).
