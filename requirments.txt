@@ -1,0 +1,4 @@
+selenium
+selenium-recaptcha-solver
+requests
+setuptools
