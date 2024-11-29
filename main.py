@@ -115,12 +115,21 @@ try:
 
         # Wait for the subsequent page elements to load
         time.sleep(20)
-        is_available('XPATH', '/html/body/div[2]/div/div[3]/div[1]/div[2]/div/div/div/div/div/div[2]/div[1]/div[2]/div[2]/div[1]/div[4]/div[3]/div[1]/div[2]')
+
     else:
         print('Get On Demand Read is not available')
 except Exception as e:
     print(e)
 
+# Wait for the current month kWh usage to become available
+
+while True:
+            try:
+                driver.find_element(By.XPATH, '/html/body/div[2]/div/div[3]/div[1]/div[2]/div/div/div/div/div/div[2]/div[1]/div[2]/div[2]/div[1]/div[4]/div[3]/div[1]/div[2]').text
+                break
+            except:
+                time.sleep(1)
+                
 # Retrieve the current kWh usage information
 try:
     current_kwh_usage_raw = driver.find_element(By.XPATH, '/html/body/div[2]/div/div[3]/div[1]/div[2]/div/div/div/div/div/div[2]/div[1]/div[2]/div[2]/div[1]/div[4]/div[3]/div[1]/div[2]').text
