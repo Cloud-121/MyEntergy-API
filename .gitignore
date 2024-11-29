@@ -1,3 +1,5 @@
 
 /venv
 secrets.txt
+geckodriver.log
+log2in.json
