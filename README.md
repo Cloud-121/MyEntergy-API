@@ -15,7 +15,7 @@ Open Source API for MyEntergy Advanced Meters to pull there "live" usage.
 **Getting Started**
 ---------------
 
-This project is designed to pull "live" usage data from MyEntergy Advanced Meters From There Webui. To get started, follow these steps:
+This project is designed to pull "live" usage data from MyEntergy Advanced Meters from there webui. To get started, follow these steps:
 
 ### Step 1: Clone the repository
 
