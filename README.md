@@ -1,7 +1,7 @@
 **MyEntergy-API**
 ================
 
-Open Source API for MyEntergy Advanced Meters to pull there "live" usage.
+Open Source API for MyEntergy Advanced Meters to pull there "live" usage from the Webui.
 
 **Table of Contents**
 -----------------
