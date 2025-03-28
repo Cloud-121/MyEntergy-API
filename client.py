@@ -98,7 +98,7 @@ def get_current_kwh_usage(username, password):
             get_on_demand_read_button.click()
 
             # Wait for the subsequent page elements to load
-            time.sleep(20)
+            time.sleep(30)
 
         else:
             print('Get On Demand Read is not available')

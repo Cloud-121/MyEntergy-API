@@ -49,7 +49,7 @@ test_ua = 'Mozilla/5.0 (Windows NT 4.0; WOW64) AppleWebKit/537.36 (KHTML, like G
 options = Options()
 
 # Uncomment the line below to enable headless mode (useful for running without a GUI)
-options.headless = True
+#options.headless = True
 options.set_preference("general.useragent.override", test_ua)
 
 # Disable content sandboxing and extensions for the browser
@@ -106,7 +106,7 @@ time.sleep(5)
 
 # Check if the "Get On Demand Read" button is available and functional
 try:
-    get_on_demand_read_button = driver.find_element(By.XPATH, '/html/body/div[2]/div/div[3]/div[1]/div[2]/div/div/div/div/div/div[2]/div[1]/div[2]/div[2]/div[1]/div[4]/div[3]/div[5]/button[1]')
+    get_on_demand_read_button = driver.find_element(By.XPATH, '/html/body/div[2]/div/div[3]/div[1]/div[2]/div/div/div/div/div/div[2]/div[1]/div[2]/div[2]/div[1]/div[4]/div[3]/div[5]/div[1]/button[1]')
     if get_on_demand_read_button.is_enabled():
         print('Get On Demand Read is available')
         # Scroll to the button and click it
@@ -114,7 +114,7 @@ try:
         get_on_demand_read_button.click()
 
         # Wait for the subsequent page elements to load
-        time.sleep(20)
+        time.sleep(30)
 
     else:
         print('Get On Demand Read is not available')
